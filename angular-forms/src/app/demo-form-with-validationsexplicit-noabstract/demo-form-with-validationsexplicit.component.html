@@ -1,5 +1,5 @@
 <div class="ui raised segment">
-    <h2 class="ui header">Demo Form: with validations (explicit)</h2>
+    <h2 class="ui header">Demo Form: with validations (explicit) No Abstract Control</h2>
     <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="ui form" [class.error]="!myForm.valid && myForm.touched">
         <div class="field" [class.error]="(!myForm.controls['sku'].valid && myForm.controls['sku'].touched) || (!myForm.controls['pname'].valid && myForm.controls['sku'].touched)">
             <label for="skuInput">SKU</label>
